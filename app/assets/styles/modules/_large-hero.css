@@ -1,0 +1,84 @@
+/* Large hero content */
+
+.large-hero
+{
+	position: relative;
+	border-bottom: .62rem solid $mainBlue;
+
+	&__image
+	{
+		display: block;
+		margin-bottom: -1px;
+	}
+
+	&__text-content
+	{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__title
+	{
+		font-weight: 300;
+		color: $mainBlue;
+		margin: 0;
+		font-size: 2.4rem;
+
+		@mixin atSmall
+		{
+			font-size: 4.8rem;
+		}
+	}
+
+	&__subtitle
+	{
+		font-weight: 300;
+		color: white;
+		margin: 0;
+		font-size: 1.5rem;
+
+		@mixin atSmall
+		{
+			font-size: 2.2rem;
+		}
+
+		@mixin atMedium
+		{
+			font-size: 3.6rem;
+		}
+
+		@mixin atLarge
+		{
+			font-size: 4.8rem;
+		}
+	}
+
+	&__description_bg
+	{
+		width: 100%;
+		background-color: rgba(0, 0, 0, .2);
+	}
+
+
+	&__description
+	{
+		font-weight: 100;
+		color: white;
+		font-size: 1.1rem;
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+		max-width: 30rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: .65rem;
+		padding-bottom: .65rem;
+
+		@mixin atSmall
+		{
+			font-size: 1.875rem;
+		}
+	}
+}
