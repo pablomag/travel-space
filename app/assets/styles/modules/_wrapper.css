@@ -1,8 +1,6 @@
 .wrapper
 {
 	overflow: hidden;
-	padding-left: 1.8rem;
-	padding-right: 1.8rem;
 	max-width: 1236px;
 	margin-left: auto;
 	margin-right: auto;
@@ -10,6 +8,30 @@
 	&--medium
 	{
 		max-width: 976px;
+	}
+
+	&--no-padding-until-medium
+	{
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atMedium
+		{
+			padding-left: 1.8rem;
+			padding-right: 1.8rem;
+		}
+	}
+
+	&--no-padding-until-large
+	{
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atLarge
+		{
+			padding-left: 1.8rem;
+			padding-right: 1.8rem;
+		}
 	}
 
 	&--bmargin
@@ -26,5 +48,18 @@
 	{
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.row
+	{
+		@mixin atMedium
+		{
+			padding: 9rem;
+		}
+
+		@mixin atLarge
+		{
+			padding: 0;
+		}
 	}
 }

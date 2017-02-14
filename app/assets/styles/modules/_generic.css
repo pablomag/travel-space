@@ -1,5 +1,10 @@
 .generic
 {
+	&--padding
+	{
+		padding: 0 1.125rem 0 1.125rem;
+	}
+
 	p
 	{
 		font-weight: 300;
