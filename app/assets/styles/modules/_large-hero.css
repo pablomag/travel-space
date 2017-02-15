@@ -19,6 +19,7 @@
 		left: 0;
 		width: 100%;
 		text-align: center;
+		padding-top: 100px;
 	}
 
 	&__title
@@ -48,12 +49,12 @@
 
 		@mixin atMedium
 		{
-			font-size: 3.6rem;
+			font-size: 2.6rem;
 		}
 
 		@mixin atLarge
 		{
-			font-size: 4.8rem;
+			font-size: 3.2rem;
 		}
 	}
 
@@ -70,15 +71,30 @@
 		color: white;
 		font-size: 1.1rem;
 		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-		max-width: 30rem;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: .65rem;
 		padding-bottom: .65rem;
+		max-width: 45rem;
 
 		@mixin atSmall
 		{
 			font-size: 1.875rem;
+		}
+	}
+
+	&__btn
+	{
+		padding-bottom: 10px;
+
+		@mixin atSmall
+		{
+			padding-bottom: 15px;
+		}
+
+		@mixin atMedium
+		{
+			padding-bottom: 30px;
 		}
 	}
 }

@@ -12,5 +12,7 @@
 @import "modules/_generic";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
+@import "modules/_header";
+@import "modules/_primary-nav";
 @import "modules/_footer";
 @import "modules/_sprite";

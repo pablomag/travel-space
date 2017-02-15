@@ -44,18 +44,19 @@
 
 	@mixin atMedium
 	{
-		margin-top: -80px;
+		margin-top: -100px;
+		margin-bottom: -100px;
 
 		&__bmargin-until-medium
 		{
-			margin-bottom: 0;
+			margin-bottom: 60px;
 		}
 
 		&__medium-4
 		{
 			float: left;
 			width: 33.33%;
-			margin-top: 80px;
+			margin-top: 0;
 		}
 
 		&__medium-4--larger
@@ -84,6 +85,7 @@
 	@mixin atLarge
 	{
 		margin-top: 0px;
+		margin-bottom: 0px;
 
 		&__bmargin-until-large
 		{
@@ -117,20 +119,6 @@
 		&__large-8--smaller
 		{
 			width: 63%;
-		}
-	}
-
-	&--equal-height-at-medium
-	{
-		@mixin atMedium
-		{
-			display: flex;
-		}
-
-		& > div
-		{
-			float: none;
-			display: flex;
 		}
 	}
 
