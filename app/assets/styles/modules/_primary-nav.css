@@ -21,6 +21,11 @@
 		{
 			padding: 12px 8px;
 			background-color: transparent;
+
+			&.current-link
+			{
+				color: #fabb69;
+			}
 		}
 	}
 

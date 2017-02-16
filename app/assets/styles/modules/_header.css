@@ -13,7 +13,13 @@
 
 	@mixin atMedium
 	{
+		position: fixed;
 		background-color: rgba($mainBlue, .3);
+
+		&--dark
+		{
+			background-color: rgba($mainBlue, .95);
+		}
 	}
 
 	&__logo
@@ -26,11 +32,17 @@
 		left: 50%;
 		transform: translateX(-50%) scale(.8);
 		transform-origin: 50% 0%;
+		transition: transform 1s ease-out;
 
 		@mixin atMedium
 		{
 			left: auto;
 			transform: translateX(0);
+
+			.site-header--dark &
+			{
+				transform: scale(.56);
+			}
 		}
 	}
 
