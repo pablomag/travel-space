@@ -1498,3 +1498,19 @@ a
 	height: 42px;
 	background-position: 92.04013377926421% 86.35616438356163%;
 }
+
+.reveal-item
+{
+	opacity: 0;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--visible
+	{
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
