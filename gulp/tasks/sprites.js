@@ -10,7 +10,7 @@ var config =
 			sprite: 'sprite.svg',
 			render: {
 				css: {
-					template: './app/gulp/templates/sprite.css'
+					template: './gulp/templates/sprite.css'
 				}
 			}
 		}
