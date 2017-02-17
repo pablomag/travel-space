@@ -5,6 +5,7 @@
 	width: 100%;
 	padding: 0;
 	transition: background-color .3s ease-out;
+	height: 52px;
 
 	&--expanded
 	{
@@ -27,21 +28,30 @@
 		position: absolute;
 		z-index: 4;
 		background-color: $mainBlue;
-		padding: 17px 10px 20px 1px;
+		padding: 28px 10px 20px 1px;
 		top: 0;
 		left: 50%;
-		transform: translateX(-50%) scale(.8);
+		transform: translateX(-50%) scale(.75);
 		transform-origin: 50% 0%;
 		transition: transform 1s ease-out;
 
+		@mixin atSmall
+		{
+			padding: 2px 10px 20px 1px;
+			left: 50%;
+			transform: translateX(-50%) scale(1.1);
+		}
+
 		@mixin atMedium
 		{
+			padding: 20px 10px 20px 1px;
 			left: auto;
-			transform: translateX(0);
+			transform: translateX(20%) scale(1.4);
 
 			.site-header--dark &
 			{
-				transform: scale(.56);
+				padding: 1px 10px 20px 1px;
+				transform: scale(.75);
 			}
 		}
 	}
