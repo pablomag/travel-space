@@ -20,8 +20,7 @@ gulp.task('preview', function()
 
 gulp.task('delfolder', ['icons'], function()
 {
-	return del('./dist');
-	return del('./docs');
+	return del(['./dist', './docs']);
 });
 
 gulp.task('copy-misc', ['delfolder'], function()
@@ -41,9 +40,9 @@ gulp.task('copy-misc', ['delfolder'], function()
 			.pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('copy2docs', ['usemin'], function()
+gulp.task('copy2docs', ['optimize'], function()
 {
-	return gulp.src('./dist/**/*')
+	return gulp.src('./dist/**')
 			.pipe(gulp.dest('./docs/'));
 });
 
