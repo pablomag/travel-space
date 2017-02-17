@@ -740,7 +740,7 @@ a
 
 @media (min-width: 1010px) {
 
-  .page-section--testimonials {
+  .page-section--testimonials.lazyloaded {
     background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
     background-size: cover;
   }
@@ -1166,7 +1166,7 @@ a
   }
 
   .site-header--dark {
-    background-color: rgba(47,85,114, .95);
+    background-color: rgba(17,72,112, .92);
   }
 }
 

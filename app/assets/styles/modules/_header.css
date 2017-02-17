@@ -18,7 +18,7 @@
 
 		&--dark
 		{
-			background-color: rgba($mainBlue, .95);
+			background-color: rgba($darkBlue, .92);
 		}
 	}
 
